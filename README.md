@@ -22,6 +22,10 @@ A growing collection of practical research assignments from a DeFi & Blockchain 
 
 For a key space of approximately `n−1` valid private keys and `N` existing keys, the first-order probability is approximately `P ≈ N / (n−1)`. The coursework investigates this estimate by experimenting with smaller elliptic-curve groups and comparing theory to observed collisions.
 
+![Merkle proof for tx2](assets/merkle-proof.svg)
+
+*Merkle proof illustration: verify tx2 using the sibling hash of tx1 and the hash of the tx3/tx4 subtree.*
+
 Other experiments: testing an original **educational** hash function for determinism, performance, avalanche effect, uniformity, chi-squared statistic, collisions and output-bit balance; implementing Merkle proof generation and membership verification.
 
 **Important:** A home-built hash is not suitable for production cryptographic security. Statistical tests do not establish collision or preimage resistance.
