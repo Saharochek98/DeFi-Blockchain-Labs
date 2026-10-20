@@ -6,6 +6,6 @@ The notebook explores block hashing, nonce mining, multiple peers with different
 
 **Third-party dependency:** [0xBoringWozniak/BlockchainExample](https://github.com/0xBoringWozniak/BlockchainExample). The educational blockchain module is upstream code; the assignment experiments are the student's work.
 
-The original `solution.ipynb` is being prepared for upload.
+**File:** [Original solution notebook](solution.ipynb), including saved outputs.
 
 **Research caveat:** Ensure each difficulty experiment uses a fresh block/nonce state before comparing outcomes.
