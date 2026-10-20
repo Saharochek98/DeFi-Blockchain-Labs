@@ -6,12 +6,14 @@ A growing collection of practical research assignments from a DeFi & Blockchain 
 
 > **Status:** HW1 and HW2 completed as student coursework; **instructor review pending**. HW3 is planned. This is an educational project, not a production blockchain or audited cryptographic library.
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/) ![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white) ![Coursework](https://img.shields.io/badge/Coursework-Instructor_review_pending-orange)
+
 ## Research labs
 
 | Lab | Research focus | Methods | Status |
 |---|---|---|---|
-| [HW1 · Cryptography](homeworks/hw01-cryptography/) | Bitcoin key collisions, custom hashing, Merkle membership proofs | Monte Carlo, statistics, elliptic curves, SHA-256 comparison | Completed · Pending review |
-| [HW2 · Proof of Work](homeworks/hw02-proof-of-work/) | Nonce search, network mining, mining difficulty | Simulations, block hashes, hash-rate experiments | Completed · Pending review |
+| [HW1 · Cryptography](homeworks/hw01-cryptography/solution.ipynb) | Bitcoin key collisions, custom hashing, Merkle membership proofs | Monte Carlo, statistics, elliptic curves, SHA-256 comparison | Completed · Pending review |
+| [HW2 · Proof of Work](homeworks/hw02-proof-of-work/solution.ipynb) | Nonce search, network mining, mining difficulty | Simulations, block hashes, hash-rate experiments | Completed · Pending review |
 | [HW3 · Upcoming](homeworks/hw03-upcoming/) | To be announced | — | Planned |
 
 ## HW1 — Cryptography
@@ -24,7 +26,7 @@ Other experiments: testing an original **educational** hash function for determi
 
 **Important:** A home-built hash is not suitable for production cryptographic security. Statistical tests do not establish collision or preimage resistance.
 
-[HW1 notebook and assignment](homeworks/hw01-cryptography/)
+**Explore:** [Open the HW1 notebook](homeworks/hw01-cryptography/solution.ipynb) · [Read the original assignment (transcribed)](homeworks/hw01-cryptography/assignment.md)
 
 ## HW2 — Proof of Work
 
@@ -36,7 +38,7 @@ Experiments include block construction, a Proof-of-Work nonce search, different 
 
 **Methodology note:** Reported mining results are preliminary. Before drawing strong numerical conclusions, difficulty trials should use independent blocks / reset nonce and a consistent timing methodology.
 
-[HW2 notebook and notes](homeworks/hw02-proof-of-work/)
+**Explore:** [Open the HW2 notebook](homeworks/hw02-proof-of-work/solution.ipynb) · [Experiment notes](homeworks/hw02-proof-of-work/README.md)
 
 ## Skills
 
@@ -50,11 +52,11 @@ Experiments include block construction, a Proof-of-Work nonce search, different 
 ├── homeworks/
 │   ├── hw01-cryptography/
 │   │   ├── README.md
-│   │   ├── solution.ipynb           # upload planned
-│   │   └── assignment.pdf           # upload planned
+│   │   ├── solution.ipynb
+│   │   └── assignment.md
 │   ├── hw02-proof-of-work/
 │   │   ├── README.md
-│   │   └── solution.ipynb           # upload planned
+│   │   └── solution.ipynb
 │   └── hw03-upcoming/
 │       └── README.md
 └── .gitignore
@@ -62,13 +64,14 @@ Experiments include block construction, a Proof-of-Work nonce search, different 
 
 ## Reproducibility & limitations
 
-The original student notebooks and assignment PDF are being prepared for upload. HW1 includes SageMath-specific computations, so some cells require a SageMath kernel rather than plain CPython. HW2 depends on the separately maintained BlockchainExample library. Python and package versions, seeds and CPU speed may change measured results; end-to-end reproducibility has not yet been established.
+Both original student notebooks are included with their saved outputs. The supplied HW1 assignment PDF is represented by a readable Markdown transcription. HW1 includes SageMath-specific computations, so some cells require a SageMath kernel rather than plain CPython. HW2 depends on the separately maintained BlockchainExample library. Python and package versions, seeds and CPU speed may change measured results; end-to-end reproducibility has not yet been established.
 
 ## Roadmap
 
 - [x] HW1 — Cryptography and Merkle proofs
 - [x] HW2 — Proof-of-Work experiments
-- [ ] Upload original notebooks, assignment and figures
+- [x] Upload original notebooks and HW1 assignment transcription
+- [ ] Export validated figures to README
 - [ ] Validate experiments and provide a reproducible environment
 - [ ] HW3 — Add the next completed assignment
 - [ ] Add automated checks for mathematical invariants
